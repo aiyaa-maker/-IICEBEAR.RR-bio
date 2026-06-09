@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@iicebear - Welcome to my shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'mitr': ['Mitr', 'sans-serif'],
+                        'fredoka': ['Fredoka', 'sans-serif'],
+                    },
+                    colors: {
+                        'pj-bg': '#fdfbf7',
+                        'pj-pink': '#F8C8E2',
+                        'pj-blue-light': '#AEE7F7',
+                        'pj-yellow-light': '#F9E98A',
+                        'pj-green-light': '#DDF0A5',
+                        'pj-brown-milk': '#A86B3D',
+                        'pj-brown-dark': '#92542B',
+                        'pj-white': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Mitr', sans-serif; background-color: #fdfbf7; overflow-x: hidden; color: #A86B3D; }
+        .font-eng { font-family: 'Fredoka', sans-serif; }
+        .shape-header { border-radius: 30px; position: relative; }
+        .shape-info { border-radius: 20px; }
+        .shape-nota { border-radius: 20px; position: relative; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #F8C8E2; border-radius: 10px; }
+        .bg-shapes { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none; overflow: hidden; }
+    </style>
+</head>
+<body class="antialiased relative selection:bg-pj-pink selection:text-pj-brown-milk">
+
+    <!-- Decoration Background -->
+    <div class="bg-shapes">
+        <svg class="absolute top-10 -left-10 w-64 h-64 text-pj-blue-light/30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,95.5,-2.9C94.2,12.2,85.6,26.9,75.3,39.6C65,52.3,53,63.1,39.4,70.5C25.8,77.9,10.6,81.9,-4.3,81.4C-19.2,80.9,-33.7,75.9,-47.5,68.4C-61.3,60.9,-74.3,50.9,-82.4,37.6C-90.5,24.3,-93.7,7.7,-91.4,-8.2C-89.1,-24.1,-81.3,-39.3,-69.9,-51.1C-58.5,-62.9,-43.5,-71.3,-29.1,-75.7C-14.7,-80.1, -1.2,-80.5, 12.5,-78.9C26.2,-77.3, 30.6,-83.6, 44.7,-76.4Z" transform="translate(100 100) scale(1.1)" />
+        </svg>
+        <svg class="absolute top-[50%] right-[-50px] w-72 h-72 text-pj-green-light/30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M51.8,-70.5C65.5,-60.8,73.9,-43.8,77.9,-26.8C81.9,-9.8,81.5,7.2,74.9,21.8C68.3,36.4,55.5,48.6,41.2,57.1C26.9,65.6,11.1,70.4,-4.1,76.3C-19.3,82.2,-33.9,89.2,-46.9,82.9C-59.9,76.6,-71.3,57,-76.3,38.2C-81.3,19.4,-79.9,1.4,-73.4,-14.2C-66.9,-29.8,-55.3,-43,-41.8,-52.5C-28.3,-62,-14.1,-67.8,1.5,-70.1C17.1,-72.4,38.1,-80.2,51.8,-70.5Z" transform="translate(100 100)" />
+        </svg>
+    </div>
+
+    <main class="max-w-[500px] mx-auto min-h-screen px-4 py-12 relative z-10 flex flex-col gap-8">
+
+        <!-- Header Section -->
+        <section class="relative mx-2">
+            <div class="shape-header bg-pj-pink p-7 shadow-sm z-10 relative flex flex-col items-start border-2 border-pj-white">
+                <!-- Polaroid Photo Inside Header -->
+                <div class="absolute -top-6 right-4 z-30 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                    <div class="w-28 h-32 bg-pj-white p-2 pb-6 rounded shadow-md border border-pj-pink flex flex-col items-center">
+                        <div class="w-full h-full bg-pj-bg overflow-hidden rounded-sm">
+                            <img src="https://i.postimg.cc/YST9FKRS/pho-la-lxy.png" alt="iicebear shop" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="font-eng text-4xl text-pj-brown-milk font-bold tracking-wide drop-shadow-sm mb-1 relative z-10">@iicebear</h1>
+                <div class="inline-block bg-pj-white text-pj-brown-milk font-eng px-4 py-1 rounded-full text-sm mt-1 shadow-sm relative z-10 font-semibold">
+                    Welcome to my shop
+                </div>
+            </div>
+            
+            <p class="mt-5 ml-4 text-base font-semibold relative z-10 text-pj-brown-milk leading-relaxed">
+                จำหน่ายแอพ goodnotes canva <br>
+                แอพพรีเมียมต่างๆ สติ้กเกอร์ ธีม อิโมจิ
+            </p>
+        </section>
+
+        <!-- Canva Pro Section -->
+        <section class="mx-2 relative">
+            <div class="bg-pj-white rounded-[28px] p-1 shadow-sm border-2 border-pj-pink">
+                <div class="bg-pj-pink/20 rounded-[24px] p-5">
+                    <div class="flex items-center gap-2 mb-4 border-b border-pj-pink pb-3">
+                        <div class="bg-pj-pink text-pj-white font-eng font-bold px-4 py-1 rounded-full text-sm shadow-sm border border-pj-white">
+                            Canva Pro
+                        </div>
+                        <span class="text-sm font-bold text-pj-brown-milk">ใช้เมลลูกค้า ไม่ใช้รหัสน้า</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2.5 text-base mb-3">
+                        <div class="bg-pj-white p-3 rounded-xl border border-pj-yellow-light flex justify-between items-center shadow-sm">
+                            <span>7 day</span> <span class="font-bold text-pj-brown-milk">29.-</span>
+                        </div>
+                        <div class="bg-pj-white p-3 rounded-xl border border-pj-yellow-light flex justify-between items-center shadow-sm">
+                            <span>14 day</span> <span class="font-bold text-pj-brown-milk">35.-</span>
+                        </div>
+                        <div class="bg-pj-white p-3 rounded-xl border border-pj-yellow-light flex justify-between items-center shadow-sm">
+                            <span>30 day</span> <span class="font-bold text-pj-brown-milk">50.-</span>
+                        </div>
+                        <div class="bg-pj-white p-3 rounded-xl border border-pj-yellow-light flex justify-between items-center shadow-sm">
+                            <span>1 year</span> <span class="font-bold text-pj-brown-milk">299.-</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-pj-white p-3.5 rounded-xl border border-pj-yellow-light flex justify-between items-center mb-4 shadow-sm">
+                        <span class="text-base font-bold text-pj-brown-milk">แบบถาวร</span>
+                        <span class="font-extrabold text-xl text-pj-brown-milk">549.-</span>
+                    </div>
+
+                    <!-- ปรับข้อความเรียงต่อกัน ชิดซ้ายในกล่องสีขาวตามบรีฟใหม่ -->
+                    <div class="bg-pj-white p-4 rounded-xl text-sm font-semibold leading-relaxed border border-pj-yellow-light shadow-sm text-left pl-5">
+                        <div class="flex items-start gap-2">
+                            <span class="text-pj-pink mt-0.5 text-xs">✿</span>
+                            <span>ต่อเมลเดิมได้ แต่ย้ายทีม มีสอนย้ายงาน และอื่นๆ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sticker / Theme / Emoji Section -->
+        <section class="mx-2 relative">
+            <div class="bg-pj-white rounded-[28px] p-1 shadow-sm border-2 border-pj-yellow-light">
+                <div class="bg-pj-yellow-light/20 rounded-[24px] p-5">
+                    <div class="flex justify-between items-center mb-4 border-b border-pj-yellow-light pb-3">
+                        <h3 class="font-eng text-xl font-bold tracking-wide">Sticker / Theme / Emoji</h3>
+                        <span class="bg-pj-white text-pj-brown-milk text-xs font-bold px-3 py-1 rounded-full border border-pj-yellow-light shadow-sm">เหรียญแท้ 1000%</span>
+                    </div>
+                    
+                    <div class="space-y-2 text-base font-semibold mb-4">
+                        <div class="flex justify-between items-center bg-pj-white p-2.5 rounded-xl border-2 border-pj-white shadow-sm">
+                            <span class="pl-2">50C</span> 
+                            <span class="bg-pj-pink/35 px-5 py-0.5 rounded-lg text-pj-brown-milk font-bold">25.-</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-pj-white p-2.5 rounded-xl border-2 border-pj-white shadow-sm">
+                            <span class="pl-2">70C</span> 
+                            <span class="bg-pj-blue-light/35 px-5 py-0.5 rounded-lg text-pj-brown-milk font-bold">35.-</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-pj-white p-2.5 rounded-xl border-2 border-pj-white shadow-sm">
+                            <span class="pl-2">85C</span> 
+                            <span class="bg-pj-green-light/35 px-5 py-0.5 rounded-lg text-pj-brown-milk font-bold">45.-</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-pj-white p-2.5 rounded-xl border-2 border-pj-white shadow-sm">
+                            <span class="pl-2">100C</span> 
+                            <span class="bg-pj-pink/35 px-5 py-0.5 rounded-lg text-pj-brown-milk font-bold">50.-</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-pj-white p-2.5 rounded-xl border-2 border-pj-white shadow-sm">
+                            <span class="pl-2">150C</span> 
+                            <span class="bg-pj-blue-light/35 px-5 py-0.5 rounded-lg text-pj-brown-milk font-bold">75.-</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-pj-white text-pj-brown-milk p-3.5 rounded-xl text-sm leading-relaxed space-y-1 shadow-sm border border-pj-yellow-light/60">
+                        <p><span class="font-bold text-pj-brown-milk text-base border-b-2 border-pj-pink">ส่งเป็นของขวัญ</span> เหรียญแท้1000% คับ</p>
+                        <p class="text-pj-brown-milk/90">เพียงแค่ ส่งลิ้งค์ลายที่ต้องการ - แจ้งQR code หรือ ไอดีไลน์</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goodnotes6 Section -->
+        <section class="mx-2 space-y-4">
+            <div class="text-center my-2 relative">
+                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-pj-pink/40 -z-10"></div>
+                <h2 class="font-eng text-2xl font-bold text-pj-brown-milk inline-block bg-pj-bg px-5 rounded-full border border-pj-pink">Goodnotes 6</h2>
+            </div>
+
+            <!-- แบบธรรมดา ถาวร -->
+            <div class="shape-nota bg-pj-white border-2 border-pj-blue-light p-5 shadow-sm">
+                <div class="flex justify-between items-center mb-3 border-b pb-2.5 border-pj-blue-light/60">
+                    <h3 class="font-bold text-base text-pj-brown-milk">แบบธรรมดา ถาวร</h3>
+                    <span class="bg-pj-blue-light text-pj-brown-milk text-xs font-bold px-2.5 py-0.5 rounded-md">Essential</span>
+                </div>
+                <ul class="text-sm space-y-2 pl-5 list-disc text-pj-brown-milk/90 mb-4 leading-relaxed">
+                    <li>ใช้ไอดีลูกค้าโหลดแอพ แต่ล็อกอินด้วยรหัสร้าน</li>
+                    <li>งานส่วนตัว ไม่ปนกัน</li>
+                    <li>ปลดล็อกหน้ากระดาษไม่จำกัด</li>
+                    <li>ใช้งานแบบ Essential</li>
+                    <li class="text-pj-brown-dark font-bold bg-pj-yellow-light/40 border border-pj-yellow-light/50 px-3 py-1 rounded-lg inline-block mt-1">
+                        ลบแอพ / เปลี่ยนเครื่อง / รีเครื่อง = ซื้อใหม่
+                    </li>
+                </ul>
+                <!-- เปลี่ยนเป็นสีฟ้าเบบี้บลูตามบรีฟ -->
+                <div class="bg-pj-blue-light/60 p-2.5 rounded-xl text-center text-sm font-semibold text-pj-brown-milk shadow-sm border border-pj-white">
+                    * free ฟอนต์ สีปากกา+ไฮไลท์ ปกสมุด *
+                </div>
+            </div>
+
+            <!-- แบบพรีเมียม ถาวร -->
+            <div class="shape-nota bg-pj-white border-2 border-pj-green-light p-5 shadow-sm">
+                <div class="flex justify-between items-center mb-3 border-b pb-2.5 border-pj-green-light/60">
+                    <h3 class="font-bold text-base text-pj-brown-milk">แบบพรีเมียม ถาวร</h3>
+                    <span class="bg-pj-green-light text-pj-brown-milk text-xs font-bold px-2.5 py-0.5 rounded-md">Premium</span>
+                </div>
+                <ul class="text-sm space-y-2 pl-5 list-disc text-pj-brown-milk/90 mb-4 leading-relaxed">
+                    <li>ใช้ไอดีลูกค้าโหลดแอพ แต่ล็อกอินด้วยรหัสร้าน</li>
+                    <li>งานส่วนตัว ไม่ปนกัน</li>
+                    <li>ปลดล็อกหน้ากระดาษไม่จำกัด</li>
+                    <li>ใช้งานแบบ Essential</li>
+                    <li class="text-pj-brown-dark font-bold bg-pj-yellow-light/40 border border-pj-yellow-light/50 px-3 py-1 rounded-lg inline-block mt-1">
+                        ลบแอพ / เปลี่ยนเครื่อง / รีเครื่อง = เข้าใหม่ได้เลยไม่เสียเพิ่ม
+                    </li>
+                </ul>
+                <!-- เปลี่ยนเป็นสีเขียวมิ้นต์อ่อนตามบรีฟ -->
+                <div class="bg-pj-green-light/60 p-2.5 rounded-xl text-center text-sm font-semibold text-pj-brown-milk shadow-sm border border-pj-white">
+                    * free ฟอนต์ สีปากกา+ไฮไลท์ ปกสมุด ของตกแต่ง *
+                </div>
+            </div>
+        </section>
+
+        <!-- RULES Section -->
+        <section class="mx-2">
+            <div class="shape-nota bg-pj-brown-milk text-pj-white p-5 shadow-sm overflow-hidden border-2 border-pj-white">
+                <div class="flex items-center gap-2 mb-3 border-b border-pj-white/30 pb-2.5">
+                    <h3 class="font-eng text-lg font-bold uppercase tracking-widest text-pj-yellow-light">RULES</h3>
+                </div>
+                <ul class="text-sm space-y-2.5 font-normal list-none pl-1 text-pj-white/95">
+                    <li class="flex items-start gap-2">
+                        <span class="text-pj-yellow-light">•</span>
+                        <span>โอนเงินแล้วไม่คืนทุกกรณี</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-pj-yellow-light">•</span>
+                        <span>รอส่งตามคิว 1-20 นาที</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-pj-yellow-light">•</span>
+                        <span>รบกวนอ่านกฎที่ให้ไปครบทุกบรรทัดนะค้าบ</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
